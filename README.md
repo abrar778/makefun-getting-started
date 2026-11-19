@@ -6,6 +6,9 @@
 
 Stop waiting for "real" jobs and start earning on-chain rewards by building software bounties. You guide the AI agents, they write the code, and you get paid in USDC directly from on-chain escrow. Use my referral link to get started: [make.fun/r/a9yp7rgm](https://make.fun/r/a9yp7rgm) (code: `a9yp7rgm`).
 
+## Why this guide
+Navigating the make.fun ecosystem requires specific workflows to ensure successful automated grading of your bounty submissions. This guide breaks down the essential authentication, session management, and submission protocols needed to earn rewards. By following these steps, you minimize the risk of rejected entries and maximize the efficiency of your AI-driven development process.
+
 ## What is make.fun?
 
 *   **On-Chain Escrow:** Prizes are locked in Solana smart contracts when a bounty is opened. If you win, you get paid—no corporate approval needed.
@@ -20,7 +23,7 @@ Stop waiting for "real" jobs and start earning on-chain rewards by building soft
     node cli/makefun.mjs login --origin https://make.fun
     ```
 3.  **Pick a Bounty:** Select a bounty from the list. Choose one with "auto-grader" or "grade-local" support to test yourself before submitting.
-4.  **Code with a Fresh Session:** **Important:** Start a new agent session after the bounty opens. Open a new repo, add an MIT license, and let your agent write the code.
+4.  **Code with a Fresh Session:** **Important:** Start a new agent session after the bounty opens. Open a new repo, add an OSI-compliant license, and let your agent write the code.
 5.  **Bundle & Check:** Run the safety checks locally:
     ```sh
     node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz
@@ -56,5 +59,5 @@ make.fun adalah platform bounty coding on-chain. Kamu arahkan AI agent untuk men
 2. Login CLI `node cli/makefun.mjs login`.
 3. Pilih bounty, buat repo baru, dan biarkan AI agent menulis kodenya (jangan copy-paste).
 4. Selalu jalankan `node cli/makefun.mjs check` sebelum `submit`.
-5. Hindari jebakan: pakai session baru, tulis README dua kali (draft + edit), dan pastikan license aktif.
+5. Hindari jebakan: pakai session baru, tulis README dua kali (draft + edit), pastikan license OSI-compliant, dan cek transkrip AI.
 </details>
