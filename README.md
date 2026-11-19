@@ -35,21 +35,21 @@ Navigating the make.fun ecosystem requires specific workflows to ensure successf
 
 | Trap | Why it fails | Fix |
 | :--- | :--- | :--- |
-| **Old Session** | Transcript must start after opening. | Start a brand new agent session. |
-| **Copy-Paste** | AI must write the code, not you. | Let the agent write files from scratch. |
-| **Lazy README** | Needs depth for automated grading. | Draft, then have the agent edit the file. |
-| **Missing Deps** | Environments aren't persistent. | List dependencies clearly in code. |
-| **Skipping `check`** | `submit` costs daily quota if rejected. | Run `check` locally until it passes. |
+| **Old Session** | Transcript must start *after* the bounty is opened. | Start a brand new, empty agent session. |
+| **Copy-Paste** | AI must write the code, not you. | Let the agent generate files from scratch. |
+| **Lazy README** | Grading needs context about *why* decisions were made. | Ask the agent to write a detailed, structured README. |
+| **Missing Deps** | Environments aren't persistent. | Explicitly list dependencies in `package.json` or equivalent. |
+| **Skipping `check`** | `submit` costs a daily quota if rejected. | Run `check` locally until it passes validation. |
 
 ## What it Costs
 The platform is free to use. You only pay for your own model API usage (e.g., Claude/GPT-4 tokens).
 
 ## FAQ
-*   **Is it legit?** Yes, backed by EZO Labs with on-chain escrow.
-*   **Do I need to be a pro dev?** No, you need to be a pro prompt-engineer who knows what good software looks like.
-*   **Where is the money?** Directly into your Solana wallet in USDC.
-*   **Which agents work?** Claude Code, Cursor, Aider, and 30+ others; everything else via `bundle --session`.
-*   **Where is my support?** Check out [make.fun/r/a9yp7rgm](https://make.fun/r/a9yp7rgm) for the latest bounties and the official Discord.
+*   **Is it legit?** Yes, backed by EZO Labs with on-chain escrow, meaning funds are held by smart contracts until a valid submission is made.
+*   **Do I need to be a pro dev?** You need to be a skilled prompt-engineer who can guide AI agents to produce high-quality, functional software.
+*   **Where is the money?** Rewards are paid directly into your Solana wallet in USDC after the leaderboard is finalized.
+*   **Which agents work?** Claude Code, Cursor, Aider, and many others; support extends to any agent that can generate a session transcript for `bundle`.
+*   **Where can I get support?** Check out [make.fun/r/a9yp7rgm](https://make.fun/r/a9yp7rgm) for the latest bounty list and the official Discord server.
 
 <details>
 <summary>Bahasa Indonesia TL;DR</summary>
